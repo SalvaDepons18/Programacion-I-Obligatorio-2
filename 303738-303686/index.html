@@ -1,0 +1,161 @@
+<!--Salvador Depons(303738) y Gino Mazza(303686)-->
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Salvador Depons(303738) y Gino Mazza(303686)"/>
+		<meta name="description" content="Sitio desarollado en el curso de Programacion i - 1er semestre 2023 - Universidad ORT Uruguay"/>
+		<link rel="stylesheet" href="css/estilos.css">
+		<script src="js/clases.js"></script>
+		<script src="js/funciones.js"></script>
+		<title>Obligatorio 2</title>
+	</head>
+	<body>
+		<nav>
+			<ul id="ul1">
+				<li><img id="logo" src="img/logo.png" alt="logo"></li>
+				<li><a href="#sec2" id="principal" >Principal</a></li>
+				<li><a href="#sec3" id="ver">Ver Reclamos</a></li>
+				<li><a href="#sec4" id="estadisticas">Estadisticas</a></li>
+				<li><a href="#sec5" id="agregarempresa">Agregar Empresas</a></li>
+				<li>
+					<form id="formBuscador" action="#" method="post">
+						<input type="text" id="buscador">
+						<button type="button" id="botonBuscador">
+							<img id="lupa" alt="lupa" src="img/lupa.png">
+						</button>
+					</form>
+				</li>
+			</ul>
+		</nav>
+		<section id="titulomain">
+				<h1>Sitio para la gestion de reclamos</h1> 
+				<br>
+		</section>
+		<section id="sec1">
+				<h3>Este sitio permite ingresar reclamos o quejas y realizar diversas consultas.</h3>
+				<p>Sitio desarollado en el curso de Programacion i - 1er semestre 2023 - Universidad ORT Uruguay por:</p>
+				<div class="centrado"><a href="img/salva.jpg" target="_blank"><img class="fotoestudiante" src="img/salva.jpg" alt="Foto Salvador"></a>Salvador Depons 303738</div>
+				<div class="centrado"><a href="img/gino.jpg" target="_blank"><img class="fotoestudiante" src="img/gino.jpg" alt="Foto Gino"></a>Gino Mazza 303686</div>
+				<div>
+					<form id="formboton">
+						<input id="boton" type="button" value="Agregar tu reclamo aqui">
+						<span id="aviso"></span>
+					</form>
+				</div>
+		</section>
+		<section id="sec2">
+		<h1>Agregar Reclamo</h1>
+			<form id="formReclamo">	
+				<table>
+					<tr>
+						<td>Nombre: </td>
+						<td><input type="text" class="inputlargo" id="nomReclamo" placeholder="Tu nombre..." required></td>
+					</tr>
+					<tr>
+						<td>Empresa: </td>
+						<td><select class="inputlargo" id="nomEmpresa" required>
+								<option label="Seleccione una opcion"></option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Reclamo: </td>
+						<td><input type="text" class="inputlargo" id="tituloReclamo" placeholder="El titulo es..." required></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><textarea placeholder="y tu reclamo es..." id="reclamo" cols="60" rows="6" required></textarea></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="button" value="Agregar" id="agregarReclamo"> <input type="button" value="Volver" id="Volver"></td>
+					</tr>
+				</table>
+			</form>
+		</section>
+		<section id="sec3">
+			<h1>Reclamos ingresados (los mas recientes primero)</h1>
+			<span id="reclamos">	
+			</span>	
+		</section>
+		<section id="sec4">
+			<h1>Estadisticas</h1>
+			<h3>Empresas seleccionadas</h3>
+			<div>
+				<form action="#" method="post" id="botones">
+						
+				</form>
+			</div>
+			<div>
+				<form action="#" method="post" id="radios">
+					<input type="radio" id="crec" name="rad" value="creciente" checked><label for="crec">Orden nombre creciente</label>
+					<input type="radio" id="decrec" name="rad" value="decreciente"><label for="decrec">Orden nombre decreciente</label>
+				</form>
+			</div>
+			<div>
+				<table id="tablaempresas">
+					<caption id="empiezanCon">Todas las empresas</caption>
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Direccion</th>
+							<th>Rubro</th>
+							<th>Cantidad</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						
+					</tbody>
+				</table>
+			</div>
+			<h3>Informacion General</h3>
+			<form id="botonPromedios"></form>
+			<p>El promedio de las cantidades considerando todos los reclamos de todas las empresas es: <span id="promedio"></span></p>
+			<p>Total de empresas registradas: <span id="cantidadEmpresas"></span> </p>
+			<h3>Empresas sin Reclamos</h3>
+			<ul id="ulId">
+				<li><span id="noHayEmpresas"></span></li>
+			</ul>
+			<h3>Rubros con maxima cantidad de reclamos</h3>
+			<ul id="ulId2">
+				<li><span id="noHayEmpresas2"></span></li>
+			</ul>
+		</section>
+		<section id="sec5">
+			<h1>Agregar Empresa</h1>
+			<h3>Datos:</h3>
+			<form id="formEmpresa">
+				<table>
+					<tr>
+						<td>Nombre </td>
+						<td><input type="text" class="tablax" id="idNombre" required></td>
+					</tr>
+					<tr>
+						<td>Dirección </td>
+						<td><input type="text" class="tablax" id="idDireccion" required></td>
+					</tr>
+					<tr>
+						<td>Rubro </td>
+						<td>
+							<select id="idRubro">
+								<option class="tablax" >Viajes</option>
+								<option class="tablax" >Restaurantes</option>
+								<option class="tablax" >Bancos</option>
+								<option class="tablax" >Muebles</option>
+								<option class="tablax" >Autos</option>
+								<option class="tablax" >Servicios</option>
+								<option class="tablax" >General</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="button" class="tablax" id="botonEmpresa" value="Agregar"></td>
+					</tr>
+				</table>
+			</form>
+		</section>
+	</body>
+</html>

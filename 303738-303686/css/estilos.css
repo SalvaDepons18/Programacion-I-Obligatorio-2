@@ -1,0 +1,144 @@
+/*Salvador Depons(303738) y Gino Mazza(303686)*/
+*{
+    font-family:Arial;
+}
+body{
+	background-color:#94CB0B;
+}
+
+#logo{
+	display: flex;
+	width: 100px;
+}
+#titulomain{
+	background-color:#f7aa7e;
+}
+
+#aviso{
+	color:red;
+	justify-content: center;
+	display:flex;
+	margin: 10px;
+}
+#Volver{
+		margin:5px;
+}
+
+#sec1{
+	background-color:#f7aa7e;
+	margin:-20px 0px 0px 0px;
+}
+#sec2{
+	background-color:#E8B111;
+	margin:-20px 0px 0px 0px;
+}
+#sec3{
+	background-color:#C8600F;
+	margin:-20px 0px 0px 0px;
+}
+#sec4{
+	background-color:#CA8711;
+}
+#sec5{
+	background-color:#14FF4D;
+}
+#logo{
+	padding:0px;
+	border:0px;
+	width: 60px;
+	height: 60px;
+}
+#lupa{
+	padding:0px;
+	width: 15px;
+	height: 15px;
+}
+#ul1{
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#ul1 li{
+	margin-left: 60px;
+}
+#formboton{
+	display: grid;
+}
+#boton{
+	padding: 15px;
+	margin: 20px auto;
+	border-radius: 25px;
+	font-size: 30px;
+	background: linear-gradient(to bottom, yellow, orange);	
+}
+#botones{
+	margin: 15px;
+	justify-content: center;
+	display: flex; 
+}
+#bott{
+	background: lime;
+}
+#radios{
+	margin: 30px;
+	justify-content: center;
+	display: flex; 
+}
+#tablaempresas{
+	background: white;
+	border-radius: 13px;
+	border: 2px solid black;
+	text-align: center;
+	margin: auto;
+}
+#tablaempresas td,th{
+	border: 2px solid black;
+	padding-left: 160px;
+	padding-right: 160px;
+}
+.tablax{
+	margin:-2px;
+}
+.inputlargo{
+	width: 250px;
+}
+.botones2{
+	margin: 3px;
+	background-color: white;
+}
+.verde{
+	background-color: #4CF74C;
+}
+.rojo{
+	background-color: #D76834;
+}
+.fotoestudiante{
+	width:50px;
+	padding:0px;
+	border:0px;
+	margin:10px;
+}
+.centrado{
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.cajas{
+	background-color:#FFFFFF;
+	width:90%; 
+	text-align:justify;
+	margin:auto;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+.cajas p{
+	margin: 15px 0px 15px 250px;
+}
+
+
+
+
+	
